@@ -2,6 +2,12 @@
   "name": "26-tmdb",
   "version": "0.2.0",
   "private": true,
+  "author": "Santiago José Posse Aráoz",
+  "main": "server.js",
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.19.2"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
@@ -21,7 +27,7 @@
   },
   "scripts": {
     "start": "concurrently 'npm run server' 'npm run client'",
-    "server": "nodemon api/server.js",
+    "server": "nodemon server.js",
     "client": "react-scripts start",
     "build": "react-scripts build"
   },
